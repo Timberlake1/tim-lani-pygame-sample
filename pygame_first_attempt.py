@@ -48,7 +48,7 @@ while True:
         a -= speed
     if userInput[pygame.K_RIGHT]:
         a += speed
-    if red_box.colliderect(silver_box) == False
+    if red_box.colliderect(silver_box) == False:
         if userInput[pygame.K_UP]:
             b -= speed
         if userInput[pygame.K_DOWN]:
