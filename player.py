@@ -76,7 +76,7 @@ class Player(pygame.sprite.Sprite):
         if pygame.sprite.spritecollide(self,self.obstacles,False):
             pass
 
-        # Barrier
+        # Barrier (not a good implementation of barrier, not precise because has some approximation)
         if self.twin == "good":
             if self.x >= 400-32: self.x = 400-32
             if self.x <= 0: self.x = 0
