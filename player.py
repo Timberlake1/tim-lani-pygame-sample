@@ -28,7 +28,7 @@ class Player(pygame.sprite.Sprite):
         self.down_pressed = False
         self.speed = 4
 
-        # Collision
+        # Obstacles
         self.obstacles = obstacles
 
     def player_input(self):
