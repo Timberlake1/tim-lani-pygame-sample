@@ -71,6 +71,8 @@ class Player(pygame.sprite.Sprite):
             self.vy = -self.speed
         if self.down_pressed and not self.up_pressed:
             self.vy = self.speed
+        self.x += self.vx
+        self.y += self.vy
 
         # Collision (incomplete)
         if pygame.sprite.spritecollide(self,self.obstacles,False):
