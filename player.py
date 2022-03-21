@@ -4,7 +4,7 @@ from sys import exit
 class Player(pygame.sprite.Sprite):
     def __init__(self,twin,x,y,obstacles):
         super().__init__()
-        # All animations of character
+        # Load all animations of character
         self.twin = twin
         self.walk_up = pygame.image.load(f'assets/graphics/{self.twin}/{self.twin}_up.png').convert_alpha()
         self.walk_up = pygame.transform.scale2x(self.walk_up)
